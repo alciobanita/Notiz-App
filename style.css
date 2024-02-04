@@ -1,0 +1,241 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(95, 99, 104);
+  margin: 0;
+  background-image: url('./img/bg/p2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+h1{
+  font-weight: 500;
+}
+
+h2{
+  flex: 1;
+}
+
+.AppIcon {
+  width: 48px !important;
+  cursor: pointer;
+  padding: 8px;
+  
+}
+
+.deletenotebtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 18px;
+  padding-inline: 5px;
+}
+.header {
+  background-color: #ffffffef;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 8px;
+  padding-left: 24px;
+  box-shadow: rgba(0, 0, 0, 1.1) 0px 3px 9px;
+  border-radius: 16px;
+  margin: 8px;
+  width: 100%;
+  max-width: -webkit-fill-available;
+
+}
+
+.menu {
+  background-color: #ffffffef;
+  position: relative;
+  width: 160px;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 1.1) 0px 3px 9px;
+  z-index: 100;
+  border-radius: 16px;
+  margin: 8px;
+}
+
+.mainArea {
+  display: flex;
+  overflow: hidden;
+  height: calc(100vh - 132px);
+}
+
+.creatorsArea{
+  display: flex;
+  justify-content: center;
+  width: inherit;
+}
+
+.creator {
+  background-color: #ffffffef;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  width: inherit;
+  max-width: 400px;
+  height: auto;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 1.1) 0px 3px 9px;
+  margin: 8px;
+  text-align: left;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.txt_inp{
+  flex: 1;
+  padding: inherit;
+}
+.inp {
+  padding: 3% 6%;
+  background: #fafbfc;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, .1);
+  height: 10px;
+  position: relative;
+  overflow: hidden;
+  border: solid lightgray 1px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.inp_noteTitle{
+  text-align: left;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.7em;
+  letter-spacing: normal;
+  word-break: break-all;
+  white-space: pre-wrap;
+  max-width: calc(100% - 50px);
+  min-width: 90px;
+  resize: none;
+  outline: none;
+  transition: all 0.4s ease-out;
+  cursor: text;
+  user-select: auto;
+  border: none;
+  background: transparent;
+  font-style: italic;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  align-items: baseline;
+}
+
+.inp_txtArea{
+  resize: none;
+  color: black;
+  font-size: 1em;
+  line-height: 1.7;
+  word-wrap: break-word;
+  text-align: left;
+  min-width: 100%;
+  transition: all ease-out .4s;
+  cursor: text;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  padding: 0;
+  margin: 4px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  top: 0;
+
+}
+
+.subArea{
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: -webkit-fill-available;
+  overflow: hidden;
+}
+.note {
+  margin: 20px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  clear: both;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 1.1) 0px 3px 9px;
+  background-color: #ffffffef;
+  border-radius: 16px; 
+}
+
+.notesArea {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+ flex-flow: nowrap;
+  margin: 8px;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: auto;
+}
+
+.btn {
+  background: rgba(114, 174, 243, 0.356);
+  border: solid lightgray 1px;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  transition: all ease .2s;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+}
+
+.btn_div{
+  display: flex;
+  align-items: flex-end;
+  width: 300px;
+}
+
+.menubtn{
+  display: flex;
+}
+
+.deletenotebtn{
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 10px;
+  right: 10px;
+  transform: scale(1.05);
+  background:none;
+}
+
+.deletenotebtn:hover{
+  transform: scale(1.5);
+}
+
+.delBtn_div{
+ display: flex;
+  justify-content: end;
+}
+
